@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #af9d9d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.search {
+  width: 100%;
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 0px;
+  font-size: 17px;
+  border-style: double;
+}
+
+
+
+.MovieCard {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.MovieList {
+  margin: 0 auto;
+  width: 95%;
+}
+.MovieListitems {
+  width: 80%;
+  margin: 0 auto;
+}
+.MoviePoster {
+  width: 200px;
+  height: 300px;
+}
+.rating {
+  margin-left: 8px;
+  display: flex;
+  margin: 0 auto;
+}
+.fa-star {
+  padding: 5px;
+}
+.Title {
+  font-weight: 400;
+  font-size: 20git px;
+  font-family: "Acme", sans-serif;
+}
+.Bio {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: whitesmoke;
+  color: #303245;
+  overflow: auto;
+  max-height: 100%;
+  font-size: 14px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px;
+}
+.MovieCard:hover .Bio {
+  transform: translateY(0%);
+}
+.MovieCard:hover {
+  box-shadow: rgba(241, 93, 73, 0.8) 0px 7px 29px 0px;
+}
+
+.AddMovie {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 70%;
+  height: 350px;
+  padding: 32px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 50px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-image: url("https://www.vhv.rs/dpng/d/558-5582313_draven-profile-png-download-draven-chibi-transparent-png.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+h3 {
+  color: #282c34;
+  margin: 5px auto;
+  padding: 5px 10px;
+  font-family: "Style Script", cursive;
+}
+.AddMovie input [Type="text"] {
+  margin: 0 10px;
+
+}
+.input {
+  background-color: #cacaca;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #282c34;
+  font-size: 14px;
+  height: 50px;
+  outline: 0;
+  width: 100%;
+  margin: 10px 0;
+  font-family: "Acme", sans-serif;
+}
+.submit {
+  width: 30%;
+  height: 40px;
+  margin: 10px auto;
+  background-color: #f15d49;
+  border-style: none;
+  border-radius: 10px;
+  color: #e9e9e9;
+}
+
+.Add {
+  padding: 5px;
+  width: 10%;
+  height: 30px;
+  margin: 10px auto;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #282c34;
+  border-radius: 10px;
+}
+.popcorn {
+  width: 150px;
+}
+/***************************************/
+.close {
+  vertical-align: middle;
+  border: none;
+  color: inherit;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.close:focus,
+.close:hover {
+  opacity: 1;
+  background: rgba(128, 128, 128, 0.5);
+}
+.close:active {
+  background: rgba(128, 128, 128, 0.9);
+}
+/* tines of the X */
+.close::before,
+.close::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 20px;
+  width: 4px;
+  background-color: currentColor;
+}
+.close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+/**********************************************/
